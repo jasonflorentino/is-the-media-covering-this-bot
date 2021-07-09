@@ -1,0 +1,17 @@
+{
+  "name": "is-the-media-talking-about-twitterbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "needle": "^2.8.0",
+    "twitter-v2": "^1.1.0"
+  }
+}
