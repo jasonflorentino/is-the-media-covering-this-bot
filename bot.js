@@ -1,7 +1,8 @@
 require("dotenv").config();
-const twitter_stream = require("./twitter_stream");
+const twitter_stream = require("./lib/twitter_stream");
 
 async function run() {
+  console.log("Starting bot")
   let currentRules;
 
   try {
@@ -13,8 +14,8 @@ async function run() {
     process.exit(1);
   }
 
-  const stream = twitter_stream.streamConnect(0);
-  console.log(`Stream created ${stream}`);
+  twitter_stream.streamConnect(0);
+  console.log(`Stream created and listening...`);
 }
 
 run();
