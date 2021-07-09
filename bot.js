@@ -3,12 +3,11 @@ const twitter_stream = require("./lib/twitter_stream");
 
 async function run() {
   console.log("Starting bot")
-  let currentRules;
-
+  // let currentRules;
   try {
-    currentRules = await twitter_stream.getAllRules();
-    await twitter_stream.deleteAllRules(currentRules);
-    await twitter_stream.setRules();
+    // currentRules = await twitter_stream.getAllRules();
+    // await twitter_stream.deleteAllRules(currentRules);
+    // await twitter_stream.setRules();
   } catch (e) {
     console.error(e);
     process.exit(1);
