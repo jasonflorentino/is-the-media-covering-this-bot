@@ -1,5 +1,5 @@
 require("dotenv").config();
-const twitter_stream = require("./lib/twitter_stream");
+const twitter_stream = require("./lib/twitter.stream");
 const config = require("./lib/config");
 
 async function run() {
