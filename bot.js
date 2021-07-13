@@ -2,7 +2,15 @@ require("dotenv").config();
 const twitter_stream = require("./lib/twitter.stream");
 const config = require("./lib/config");
 
-async function run() {
+/**
+ * @name main
+ * @description The main driver for the bot.
+ * Will first conditionally reset any filtered stream 
+ * rules, before establishing a new infinite stream
+ * connection. Any actions taken are in response to 
+ * matched tweets captured while listening.
+ */
+async function main() {
   console.log("Starting bot")
 
   if (config.RESET_RULES_ON_STARTUP) {
@@ -21,4 +29,4 @@ async function run() {
   console.log(`Stream created and listening...`);
 }
 
-run();
+main();
