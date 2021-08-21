@@ -3,8 +3,7 @@ const twitter_stream = require("./lib/twitter.stream");
 const config = require("./lib/config");
 
 /**
- * @name main
- * @description The main driver for the bot.
+ * The main driver for the bot.
  * Will first conditionally reset any filtered stream 
  * rules, before establishing a new infinite stream
  * connection. Any actions taken are in response to 
